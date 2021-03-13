@@ -3,21 +3,15 @@
 </div>
 <table *ngIf="dataLoaded!=false" class="table">
     <thead>
-        <tr>
-            <td>Id</td>
+        <tr class="bg-dark text-warning">
             <td>Brand Name</td>
             <td>Color Name</td>
-            <td>Model Year</td>
             <td>Daily Price</td>
-            <td>Description</td>
         </tr>
     </thead>
     <tr *ngFor="let car of cars">
-        <td>{{car.carId}}</td>
         <td>{{car.brandName}}</td>
         <td>{{car.colorName}}</td>
-        <td>{{car.modelYear}}</td>
         <td>{{car.dailyPrice}}</td>
-        <td>{{car.description}}</td>
     </tr>
 </table>
